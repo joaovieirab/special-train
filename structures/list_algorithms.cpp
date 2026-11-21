@@ -12,7 +12,7 @@ Inode * empty_node_gen()
 
 /*Inserção de uma célula na lista no fim da lista*/
 
-void node_insert(Inode ** list, int sample)
+void insert_last(Inode ** list, int sample)
 {
     if((*list)->empty == 1)
         (*list)->elem = sample;
@@ -114,8 +114,6 @@ int search(Inode * list, int value)
             return position;
     }
 }
-
-/*Remoção de uma célula ESPECÍFICA de uma lista*/
 
 /*Busca seguida de remoção*/
 
@@ -271,6 +269,5 @@ int main()
     Inode * node1;
     int vec[] = {1, 2, 3, 4, 5};
     node1 = vec2list(vec, 5);
-    printf("%d\n", search(node1, 6));
     return 0;
 }
