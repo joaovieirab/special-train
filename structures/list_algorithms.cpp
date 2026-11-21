@@ -120,6 +120,24 @@ int search(Inode * list, int value)
 /*Inserção de uma célula na lista conhecendo a posição onde                 */
 /*será inserida e o elemento que será preenchido - Busca seguida de inserção*/
 
+void insert(Inode ** list, int new_elem_value, int position)
+{
+    Inode * new_node;
+    new_node = (Inode *) malloc(sizeof(Inode));
+    new_node->elem = new_elem_value;
+    int i;
+    i = 0;
+    Inode * cursor;
+    cursor = (*list);
+    while (i < position - 1)
+    {
+        cursor = cursor->next;
+        i++;
+    }
+    new_node->next = cursor->next;
+    cursor->next = new_node;
+}
+
 /*Inserção de uma célula no início da lista*/
 
 void inser_1st(Inode ** list, int sample)
@@ -269,5 +287,7 @@ int main()
     Inode * node1;
     int vec[] = {1, 2, 3, 4, 5};
     node1 = vec2list(vec, 5);
+    insert(&node1, 6, 4);
+    print_list(node1);
     return 0;
 }
