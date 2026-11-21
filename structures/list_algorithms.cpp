@@ -90,7 +90,30 @@ int max_search(Inode * list)
         return max;
     }
 }
-/*Busca em listas crescentes*/
+/*Busca em listas*/
+
+int search(Inode * list, int value)
+{
+    /*Verificação se vazio*/
+    if(list->empty == 1)
+        return 0;
+    else
+    {
+        int position;
+        position = 1;
+        Inode * cursor;
+        cursor = list;
+        while(cursor != NULL && cursor->elem != value)
+        {
+            cursor = cursor->next;
+            position++;
+        }
+        if(cursor == NULL)
+            return 0;
+        else
+            return position;
+    }
+}
 
 /*Remoção de uma célula ESPECÍFICA de uma lista*/
 
@@ -241,8 +264,6 @@ void free_list(Inode ** list)
     (*list) =  NULL;
 }
 
-/*Inversão de uma lista*/
-
 /*TESTES*/
 
 int main()
@@ -250,7 +271,6 @@ int main()
     Inode * node1;
     int vec[] = {1, 2, 3, 4, 5};
     node1 = vec2list(vec, 5);
-    free_list(&node1);
-    printf("%d\n", node1->elem);
+    printf("%d\n", search(node1, 6));
     return 0;
 }
