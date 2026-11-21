@@ -117,6 +117,30 @@ int search(Inode * list, int value)
 
 /*Busca seguida de remoção*/
 
+void remove(Inode ** list, int trash_elem_value)
+{
+    /*Verificação se vazio*/
+
+    if((*list)->empty == 1)
+    {
+        printf("The list is empty!\n");
+        exit(-1);
+    }
+    Inode * cursor, * trash;
+    cursor = (*list);
+    trash = (*list)->next;
+    while(trash != NULL && trash->elem != trash_elem_value)
+    {
+        cursor = trash;
+        trash = trash->next;
+    }
+    if (trash != NULL)
+    {
+        cursor->next = trash->next;
+        free(trash);
+    }
+}
+
 /*Inserção de uma célula na lista conhecendo a posição onde                 */
 /*será inserida e o elemento que será preenchido - Busca seguida de inserção*/
 
@@ -288,6 +312,7 @@ int main()
     int vec[] = {1, 2, 3, 4, 5};
     node1 = vec2list(vec, 5);
     insert(&node1, 6, 4);
+    remove(&node1, 6);
     print_list(node1);
     return 0;
 }
