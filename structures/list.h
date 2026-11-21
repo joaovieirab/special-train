@@ -1,19 +1,19 @@
-/*Estrutura de dados tipo nó                                                */
-/*--------------------------------------------------------------------------*/
-/*-Atributos:                                                               */
-/*  *elem: Dado armazenado pelo nó = tipo inteiro                           */
-/*  *empty: Flag para apontar se o nó está ou não vazio = tipo inteiro      */
-/*  *int_node: Ponteiro para o próximo nó = tipo ponteiro de inteiro        */
-/*--------------------------------------------------------------------------*/
-/*-Restrições:                                                              */
-/* *Por padrão, empty = 1 para nós vazios e empty = 0 para nós não vazios   */
-/*--------------------------------------------------------------------------*/
+#ifndef LIST_H
+#define LIST_H
+
+/**
+ * @brief Node data structure for (Inode) for a single linked list of integers.
+ * 
+ * @note By default, 'empty = 1' indicates an empty node, and 'empty = 0' indicates a no empty node.
+ */
 
 struct int_node
 {
-    int elem;
-    int empty;
-    struct int_node * next;
+    int elem;                       /** - Integer value stored in the node. */
+    int empty;                      /** -Status flag: 1 if empty, 0 othercase */
+    struct int_node * next;         /** - Pointer for the next node in the linked list. */
 };
 
 typedef struct int_node Inode;
+
+#endif
