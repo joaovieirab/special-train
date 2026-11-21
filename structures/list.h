@@ -17,3 +17,14 @@ struct int_node
 typedef struct int_node Inode;
 
 #endif
+
+/**
+ * @brief Creates an empty node for a linked list.
+ * 
+ * @note By default, 'empty == 1' 
+ * 
+ * @return Pointer for the newly empty node, or NULL pointer if failure.
+ */
+
+Inode * empty_node_gen(void);
+

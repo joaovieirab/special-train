@@ -173,8 +173,6 @@ void inser_1st(Inode ** list, int sample)
     (*list) = new_node;
 }
 
-/*Remoção de toda as células que tem um elemento 'x'*/
-
 /*Vetor para lista*/
 
 Inode * vec2list(int vec[], int length)
