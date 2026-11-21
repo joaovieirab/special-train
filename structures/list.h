@@ -28,3 +28,11 @@ typedef struct int_node Inode;
 
 Inode * empty_node_gen(void);
 
+/**
+ * @brief Alocates a node with the new element value and inserts
+ *        at the last position of linked list.
+ * 
+ * @param Double Pointer to an Inode linked list.
+ * @param Integer value for the element of the new node.
+ */
+void insert_last(Inode ** list, int sample);
