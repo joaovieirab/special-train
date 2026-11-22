@@ -120,9 +120,6 @@ void remove(Inode ** list, int trash_elem_value)
     }
 }
 
-/*Inserção de uma célula na lista conhecendo a posição onde                 */
-/*será inserida e o elemento que será preenchido - Busca seguida de inserção*/
-
 void insert(Inode ** list, int new_elem_value, int position)
 {
     Inode * new_node;

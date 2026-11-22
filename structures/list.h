@@ -96,3 +96,14 @@ int search(Inode * list, int value);
  */
 
 void remove(Inode ** list, int trahs_elem_value);
+
+/**
+ * @brief Insert a new node with an integer specified value at a specified position.
+ * 
+ * @param Double pointer for a linked list
+ * @param Integer value for a new node element
+ * @param Integer value for the insert position
+ * 
+ */
+
+void insert(Inode ** list, int new_elem_value, int position);
