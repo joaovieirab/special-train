@@ -144,3 +144,15 @@ Inode * vec2list(int vec[], int length);
  */
 
 int * list2vec(Inode * list, int length);
+
+/**
+ * @brief Create a copy of a linked list.
+ * 
+ * @param Pointer for a linked list.
+ * 
+ * @note If the linked list is empty, prints an warning message and exit the program.
+ * 
+ * @return The copy of the linked list.
+ */
+
+Inode * copy(Inode * original_list);

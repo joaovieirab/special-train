@@ -199,11 +199,8 @@ int * list2vec(Inode * list, int length)
     }
 }
 
-/*Copia de uma lista*/
-
 Inode * copy(Inode * original_list)
 {
-    /*Verificação se vazio*/
     if(original_list->empty == 1)
     {
         printf("The list is empty\n");
@@ -212,7 +209,7 @@ Inode * copy(Inode * original_list)
     Inode * new_list;
     new_list = (Inode *) malloc(sizeof(Inode));
     new_list->elem = original_list->elem;
-    if(original_list->next == NULL) // Se for uma lista de elemento único...
+    if(original_list->next == NULL)
         new_list->next = NULL;
     else
     {
