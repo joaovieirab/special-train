@@ -71,3 +71,17 @@ int min_search(Inode * list);
  */
 
 int max_search(Inode * list);
+
+/**
+ * @brief Searchs the position of the 1st node with the specified element value.
+ * 
+ * @param Pointer for a linked list.
+ * @param Integer searched value.
+ * 
+ * @note if the linked list is empty, returns 0.
+ * 
+ * @return The position of the first node with specified element value.
+ * 
+ */
+
+int search(Inode * list, int value);

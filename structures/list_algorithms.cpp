@@ -75,11 +75,9 @@ int max_search(Inode * list)
         return max;
     }
 }
-/*Busca em listas*/
 
 int search(Inode * list, int value)
 {
-    /*Verificação se vazio*/
     if(list->empty == 1)
         return 0;
     else
