@@ -244,20 +244,16 @@ int len(Inode * list)
     return length + 1;
 }
 
-/*Liberação de todas as células da lista*/
-
 void free_list(Inode ** list)
 {
     Inode * cursor;
     cursor = (*list);
     while(cursor != NULL)
     {
-        printf("entrou\n");
         Inode * trash;
         trash = cursor;
         cursor = cursor->next;
         free(trash);
-        printf("deu bom\n");
     }
     (*list) =  NULL;
 }

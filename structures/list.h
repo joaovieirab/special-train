@@ -177,3 +177,11 @@ void list_cat(Inode * list1, Inode * list2);
  */
 
 int len(Inode * list);
+
+/**
+ * @brief deletes from memory all nodes of the linked list.
+ * 
+ * @param Double pointer for the linked list.
+ */
+
+void free_list(Inode ** list);
