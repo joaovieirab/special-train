@@ -10,8 +10,6 @@ Inode * empty_node_gen()
     return new_node;
 }
 
-/*Inserção de uma célula na lista no fim da lista*/
-
 void insert_last(Inode ** list, int sample)
 {
     if((*list)->empty == 1)
@@ -27,9 +25,6 @@ void insert_last(Inode ** list, int sample)
         cursor->next = new_node;
     }
 }
-
-
-/*Impressão da lista*/
 
 void print_list(Inode * list)
 {

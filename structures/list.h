@@ -35,4 +35,15 @@ Inode * empty_node_gen(void);
  * @param Double Pointer to an Inode linked list.
  * @param Integer value for the element of the new node.
  */
+
 void insert_last(Inode ** list, int sample);
+
+/**
+ * @brief Prints the elements, at sequence, of a linked list.
+ * 
+ * @param Pointer for a no empty linked list.
+ * 
+ * @note If the linked list is empty, it prints a warning message.
+ */
+
+void print_list(Inode * list);
