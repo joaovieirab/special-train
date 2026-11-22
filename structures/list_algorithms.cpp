@@ -176,12 +176,8 @@ Inode * vec2list(int vec[], int length)
     return head;
 }
 
-/*Lista para vetor*/
-
 int * list2vec(Inode * list, int length)
 {
-    /*Verificação se vazio*/
-
     if(list->empty == 1)
     {
         printf("The list is empty!\n");

@@ -131,3 +131,16 @@ void insert_1st(Inode ** list, int sample);
  */
 
 Inode * vec2list(int vec[], int length);
+
+/**
+ * @brief Create a vector of integer elements using a linked list.
+ * 
+ * @param Pointer for a linked list.
+ * @param Integer value as the linked list length.
+ * 
+ * @note If the linked list is empty, prints an warning message and exit the program.
+ * 
+ * @return The new vector using the linked list.
+ */
+
+int * list2vec(Inode * list, int length);
