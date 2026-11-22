@@ -57,12 +57,8 @@ int min_search(Inode * list)
     }
 }
 
-/*Busca pelo máximo de uma lista*/
-
 int max_search(Inode * list)
 {
-    /*Verificação se vazia*/
-
     if(list->empty == 1)
     {
         printf("The list is empty!\n");
