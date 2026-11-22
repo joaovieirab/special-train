@@ -107,3 +107,14 @@ void remove(Inode ** list, int trahs_elem_value);
  */
 
 void insert(Inode ** list, int new_elem_value, int position);
+
+/**
+ * @brief Insert a new node with specified integer value as 
+ *        element in the first position of a linked list.
+ * 
+ * @param Double pointer for a linked list.
+ * @param Integer value for a new node element.
+ * 
+ */
+
+void insert_1st(Inode ** list, int sample);

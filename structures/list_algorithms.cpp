@@ -138,8 +138,6 @@ void insert(Inode ** list, int new_elem_value, int position)
     cursor->next = new_node;
 }
 
-/*Inserção de uma célula no início da lista*/
-
 void inser_1st(Inode ** list, int sample)
 {   
     Inode * new_node;
