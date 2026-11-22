@@ -167,3 +167,13 @@ Inode * copy(Inode * original_list);
  */
 
 void list_cat(Inode * list1, Inode * list2);
+
+/**
+ * @brief Count the number of nodes in a linked list.
+ * 
+ * @param Pointer for the linked list.
+ * 
+ * @return The number of nodes of the linked list.
+ */
+
+int len(Inode * list);

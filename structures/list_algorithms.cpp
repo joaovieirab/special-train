@@ -234,8 +234,6 @@ void list_cat(Inode * list1, Inode * list2)
     cursor->next = list2;
 }
 
-/*Tamanho da lista*/
-
 int len(Inode * list)
 {
     int length;
