@@ -138,7 +138,7 @@ void insert(Inode ** list, int new_elem_value, int position)
     cursor->next = new_node;
 }
 
-void inser_1st(Inode ** list, int sample)
+void insert_1st(Inode ** list, int sample)
 {   
     Inode * new_node;
     new_node = (Inode *) malloc(sizeof(Inode));
