@@ -47,3 +47,15 @@ void insert_last(Inode ** list, int sample);
  */
 
 void print_list(Inode * list);
+
+/**
+ * @brief Searchs for the min element in the linked list.
+ * 
+ * @param Pointer for a no empty linked list.
+ * 
+ * @note If the linked list is empty, prints an warning message and exit the program.
+ *
+ * @return The min element of the linked list.
+ */
+
+int min_search(Inode * list);

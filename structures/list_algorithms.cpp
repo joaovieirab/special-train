@@ -28,8 +28,6 @@ void insert_last(Inode ** list, int sample)
 
 void print_list(Inode * list)
 {
-    /*Verificação se vazio*/
-
     if(list->empty == 1)
         printf("The list is empty!\n");
     else
@@ -40,12 +38,8 @@ void print_list(Inode * list)
     }
 }
 
-/*Busca pelo minimo de uma lista*/
-
 int min_search(Inode * list)
 {
-    /*Verificação se vazia*/
-
     if(list->empty == 1)
     {
         printf("The list is empty!\n");
