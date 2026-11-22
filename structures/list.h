@@ -118,3 +118,16 @@ void insert(Inode ** list, int new_elem_value, int position);
  */
 
 void insert_1st(Inode ** list, int sample);
+
+/**
+ * @brief Create a linked list with the elements, in order, of a integer vector.
+ * 
+ * @param Vector of integer elements.
+ * @param Integer value for the vector length.
+ * 
+ * @note If the 'length <= 0' as input, prints an warning message and exit the program.
+ * 
+ * @return The new linked list with the vector elements.
+ */
+
+Inode * vec2list(int vec[], int length);

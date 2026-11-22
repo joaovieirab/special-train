@@ -147,11 +147,8 @@ void insert_1st(Inode ** list, int sample)
     (*list) = new_node;
 }
 
-/*Vetor para lista*/
-
 Inode * vec2list(int vec[], int length)
 {
-    /*Verificação se vetor vazio*/
     if(length <= 0)
     {
         printf("The vector is empty or input length is invalid\n");
@@ -160,7 +157,7 @@ Inode * vec2list(int vec[], int length)
     Inode * head;
     head = (Inode *) malloc(sizeof(Inode));
     head->elem = vec[0];
-    if(length == 1) // Se vetor de um único elemento...
+    if(length == 1)
         head->next = NULL;
     else
     {
