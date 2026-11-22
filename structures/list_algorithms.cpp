@@ -98,12 +98,8 @@ int search(Inode * list, int value)
     }
 }
 
-/*Busca seguida de remoção*/
-
 void remove(Inode ** list, int trash_elem_value)
 {
-    /*Verificação se vazio*/
-
     if((*list)->empty == 1)
     {
         printf("The list is empty!\n");

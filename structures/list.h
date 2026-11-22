@@ -85,3 +85,14 @@ int max_search(Inode * list);
  */
 
 int search(Inode * list, int value);
+
+/**
+ * @brief Removes the first node of linked list with the spcified integer value.
+ * 
+ * @param Double pointer for a linked list.
+ * @param Integer value to be removed.
+ * 
+ * @note If the linked list is empty, prints an warning message and exit the program.
+ */
+
+void remove(Inode ** list, int trahs_elem_value);
