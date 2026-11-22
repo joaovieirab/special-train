@@ -156,3 +156,14 @@ int * list2vec(Inode * list, int length);
  */
 
 Inode * copy(Inode * original_list);
+
+/**
+ * @brief Concatenate two linked lists.
+ * 
+ * @param Pointer for the first linked list.
+ * @param Pointer for the second linked list.
+ * 
+ * @return The first linked list concatenated with the second one.
+ */
+
+void list_cat(Inode * list1, Inode * list2);

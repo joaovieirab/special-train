@@ -225,8 +225,6 @@ Inode * copy(Inode * original_list)
     return new_list;
 }
 
-/*Concatenação de listas*/
-
 void list_cat(Inode * list1, Inode * list2)
 {
     Inode * cursor;
