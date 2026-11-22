@@ -258,15 +258,3 @@ void free_list(Inode ** list)
     (*list) =  NULL;
 }
 
-/*TESTES*/
-
-int main()
-{
-    Inode * node1;
-    int vec[] = {1, 2, 3, 4, 5};
-    node1 = vec2list(vec, 5);
-    insert(&node1, 6, 4);
-    remove(&node1, 6);
-    print_list(node1);
-    return 0;
-}
