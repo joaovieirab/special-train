@@ -17,7 +17,7 @@ Iqueue * empty_queue_gen()
 void print_queue(Iqueue * queue)
 {
     if(queue->head->empty == 1)
-        printf("The list is empty!\n");
+        printf("The list is empty!\n") ;
     else
     {
         Inode * cursor;
