@@ -62,6 +62,16 @@ void remove (Iqueue ** queue)
     }
 }
 
+int len(Iqueue * queue)
+{
+    int queue_length;
+    Inode * cursor;
+    queue_length = 0;
+    for(cursor = queue->head; cursor != NULL; cursor = cursor->next)
+        queue_length++;
+    return queue_length;
+}
+
 /*TESTES*/
 
 int main ()
@@ -71,7 +81,7 @@ int main ()
     insert(&queue1, 1);
     insert(&queue1, 2);
     insert(&queue1, 3);
-    remove(&queue1);
-    print_queue(queue1);
+    //remove(&queue1);
+    printf("%d\n", len(queue1));
     return 0;
 }
