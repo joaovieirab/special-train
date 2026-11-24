@@ -48,6 +48,20 @@ void insert(Iqueue ** queue, int sample)
         (*queue)->tail = new_node;
     }
 }
+
+void remove (Iqueue ** queue)
+{
+    if((*queue)->head->empty == 1)
+        printf("The queue is alreay empty\n");
+    else
+    {
+        Inode * trash;
+        trash = (*queue)->head;
+        (*queue)->head = (*queue)->head->next;
+        free(trash);
+    }
+}
+
 /*TESTES*/
 
 int main ()
@@ -56,6 +70,8 @@ int main ()
     queue1 = empty_queue_gen();
     insert(&queue1, 1);
     insert(&queue1, 2);
+    insert(&queue1, 3);
+    remove(&queue1);
     print_queue(queue1);
     return 0;
 }
