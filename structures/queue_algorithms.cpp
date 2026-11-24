@@ -72,6 +72,11 @@ int len(Iqueue * queue)
     return queue_length;
 }
 
+int head(Iqueue * queue)
+{
+    return queue->head->elem;
+}
+
 /*TESTES*/
 
 int main ()
