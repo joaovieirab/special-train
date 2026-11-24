@@ -26,7 +26,7 @@ void print_queue(Iqueue * queue)
     }
 }
 
-void insert(Iqueue ** queue, int sample)
+void enqueue(Iqueue ** queue, int sample)
 {
     if((*queue)->head->empty == 1)
     {
@@ -49,7 +49,7 @@ void insert(Iqueue ** queue, int sample)
     }
 }
 
-void remove (Iqueue ** queue)
+void dequeue (Iqueue ** queue)
 {
     if((*queue)->head->empty == 1)
         printf("The queue is alreay empty\n");
@@ -78,10 +78,9 @@ int main ()
 {
     Iqueue * queue1;
     queue1 = empty_queue_gen();
-    insert(&queue1, 1);
-    insert(&queue1, 2);
-    insert(&queue1, 3);
-    //remove(&queue1);
+    enqueue(&queue1, 1);
+    enqueue(&queue1, 2);
+    enqueue(&queue1, 3);
     printf("%d\n", len(queue1));
     return 0;
 }
