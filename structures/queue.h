@@ -27,4 +27,15 @@ struct int_queue
 };
 
 typedef struct int_queue Iqueue;
+
+/**
+ * @brief Creates an empty queue using a linked list.
+ * 
+ * @note By default, 'empty == 1'
+ * @note The pointer for next node of 'head' node is the 'tail' node, which by default is NULL pointer
+ * 
+ * @return Pointer for the newly empty queue.
+ */
+
+Iqueue * empty_queue_gen(void);
 #endif
