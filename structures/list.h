@@ -16,8 +16,6 @@ struct int_node
 
 typedef struct int_node Inode;
 
-#endif
-
 /**
  * @brief Creates an empty node for a linked list.
  * 
@@ -185,3 +183,5 @@ int len(Inode * list);
  */
 
 void free_list(Inode ** list);
+
+#endif
