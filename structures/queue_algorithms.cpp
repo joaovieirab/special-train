@@ -77,6 +77,11 @@ int head(Iqueue * queue)
     return queue->head->elem;
 }
 
+int tail(Iqueue * queue)
+{
+    return queue->tail->elem;
+}
+
 /*TESTES*/
 
 int main ()
