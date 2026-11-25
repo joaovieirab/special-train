@@ -59,4 +59,13 @@ void print(Iqueue * queue);
 
 void enqueue(Iqueue ** queue, int sample);
 
+/**
+ * @brief Remove the first node of the queue.
+ * 
+ * @param queue double pointer for a queue using a linked list of integer elements.
+ * 
+ * @note If the queue is empty, it prints a warning message.
+ */
+
+void dequeue(Iqueue ** queue);
 #endif
