@@ -78,4 +78,10 @@ void dequeue(Iqueue ** queue);
  */
 
 int len(Iqueue * queue);
+
+/**
+ * @brief return the head element of a queue.
+ */
+
+int head(Iqueue * queue);
 #endif
