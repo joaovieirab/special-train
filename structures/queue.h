@@ -38,4 +38,5 @@ typedef struct int_queue Iqueue;
  */
 
 Iqueue * empty_queue_gen(void);
+
 #endif
