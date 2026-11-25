@@ -39,4 +39,14 @@ typedef struct int_queue Iqueue;
 
 Iqueue * empty_queue_gen(void);
 
+/**
+ * @brief Prints the elements of a queue.
+ * 
+ * @param queue pointer for a queue of integer elements
+ * 
+ * @note If the queue is empty, it prints a warning message.
+ */
+
+void print(Iqueue * queue);
+
 #endif
