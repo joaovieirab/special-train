@@ -49,4 +49,14 @@ Iqueue * empty_queue_gen(void);
 
 void print(Iqueue * queue);
 
+/**
+ * @brief Insert a new node with the specified integer element at the queue.
+ * 
+ * @param queue double pointer for a queue using a linked list of integer elements.
+ * @param sample integer element to be insert at queue.
+ * 
+ */
+
+void enqueue(Iqueue ** queue, int sample);
+
 #endif
