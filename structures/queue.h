@@ -68,4 +68,14 @@ void enqueue(Iqueue ** queue, int sample);
  */
 
 void dequeue(Iqueue ** queue);
+
+/**
+ * @brief Counnts thw number of elements of queue.
+ * 
+ * @param queue pointer for a queue implemented using a linked list of integer elements.
+ * 
+ * @return the queue number of elements.
+ */
+
+int len(Iqueue * queue);
 #endif
