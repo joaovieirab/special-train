@@ -84,4 +84,11 @@ int len(Iqueue * queue);
  */
 
 int head(Iqueue * queue);
+
+/**
+ * @brief return the tail element of a queue.
+ */
+
+int tail(Iqueue * queue);
+
 #endif
