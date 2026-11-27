@@ -44,4 +44,11 @@ void push(Istack ** stack, int new_elem);
 
 void print_stack(Istack * stack);
 
+/**
+ * @return the integer element of the stack top node.
+ * 
+ * @note If the stack is empty, prints a warning message anda exit the program.
+ */
+
+int top(Istack * stack);
 #endif
