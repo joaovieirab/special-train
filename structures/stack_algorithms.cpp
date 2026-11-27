@@ -44,6 +44,19 @@ int top(Istack * stack)
     return stack->top->elem;
 };
 
+void pop(Istack ** stack)
+{
+    if((*stack)->top->empty == 1)
+        printf("The stack is emmpty!\n");
+    else
+    {
+        Inode  * trash;
+        trash = (*stack)->top;
+        (*stack)->top = (*stack)->top->next;
+        free(trash);
+    }
+}
+
 int main()
 {
     Istack * stack1;
@@ -51,7 +64,7 @@ int main()
     push(&stack1, 1);
     push(&stack1, 2);
     push(&stack1, 147);
-    printf("%d\n", top(stack1));
-    //print_stack(stack1);
+    pop(&stack1);
+    print_stack(stack1);
     return 0;
 }
