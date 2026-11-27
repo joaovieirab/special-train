@@ -30,12 +30,21 @@ void push(Istack ** stack, int new_elem)
     }
 }
 
+void print_stack(Istack * stack)
+{
+    if(stack->top->empty == 1)
+        printf("The stack is empty");
+    Inode * cursor;
+    for(cursor = stack->top; cursor != NULL; cursor = cursor->next)
+        printf("%d\n", cursor->elem);
+}
+
 int main()
 {
     Istack * stack1;
     stack1 = empty_stack_gen();
     push(&stack1, 1);
     push(&stack1, 2);
-    //print_stack(stack1);
+    print_stack(stack1);
     return 0;
 }
