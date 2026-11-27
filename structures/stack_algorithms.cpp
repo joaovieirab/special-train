@@ -39,12 +39,19 @@ void print_stack(Istack * stack)
         printf("%d\n", cursor->elem);
 }
 
+int top(Istack * stack)
+{
+    return stack->top->elem;
+};
+
 int main()
 {
     Istack * stack1;
     stack1 = empty_stack_gen();
     push(&stack1, 1);
     push(&stack1, 2);
-    print_stack(stack1);
+    push(&stack1, 147);
+    printf("%d\n", top(stack1));
+    //print_stack(stack1);
     return 0;
 }
