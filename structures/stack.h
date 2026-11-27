@@ -15,6 +15,14 @@ struct int_stack
 
 typedef struct int_stack Istack;
 
+/**
+ * @brief Creates an empty stack using a linked list.
+ * 
+ * @note By default, 'empty == 1'
+ * 
+ * @return Pointer for the newly empty stack.
+ */
 
+Istack * empty_stack_gen(void);
 
 #endif
