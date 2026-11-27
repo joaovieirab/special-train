@@ -41,6 +41,11 @@ void print_stack(Istack * stack)
 
 int top(Istack * stack)
 {
+    if(stack->top->empty == 1)
+    {
+        printf("The stack is empty!\n");
+        exit(-1);
+    }
     return stack->top->elem;
 };
 
