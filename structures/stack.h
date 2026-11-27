@@ -36,4 +36,12 @@ Istack * empty_stack_gen(void);
 
 void push(Istack ** stack, int new_elem);
 
+/**
+ * @brief Print the stack elements, in order. 
+ * 
+ * @note If the queue is empty, it prints a warning message. 
+ */
+
+void print_stack(Istack * stack);
+
 #endif
