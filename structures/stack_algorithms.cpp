@@ -57,6 +57,16 @@ void pop(Istack ** stack)
     }
 }
 
+int len(Istack * stack)
+{
+    Inode * cursor;
+    int length;
+    length = 0;
+    for(cursor = stack->top; cursor != NULL; cursor = cursor->next)
+        length++;
+    return length;
+}
+
 int main()
 {
     Istack * stack1;
