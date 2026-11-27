@@ -81,16 +81,3 @@ int tail(Iqueue * queue)
 {
     return queue->tail->elem;
 }
-
-/*TESTES*/
-
-int main ()
-{
-    Iqueue * queue1;
-    queue1 = empty_queue_gen();
-    enqueue(&queue1, 1);
-    enqueue(&queue1, 2);
-    enqueue(&queue1, 3);
-    printf("%d\n", len(queue1));
-    return 0;
-}
