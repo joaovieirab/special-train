@@ -14,7 +14,7 @@ Iqueue * empty_queue_gen()
     return new_queue;
 }
 
-void print(Iqueue * queue)
+void print_queue(Iqueue * queue)
 {
     if(queue->head->empty == 1)
         printf("The list is empty!\n") ;
