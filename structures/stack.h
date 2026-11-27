@@ -16,6 +16,10 @@ struct int_node
 
 typedef struct int_node Inode; 
 
+/**
+ * @brief Linked list data structure for a single stack of integers.
+ */
+
 struct int_stack
 {
     Inode * top;
