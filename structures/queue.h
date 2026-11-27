@@ -35,7 +35,7 @@ Iqueue * empty_queue_gen(void);
  * @note If the queue is empty, it prints a warning message.
  */
 
-void print(Iqueue * queue);
+void print_queue(Iqueue * queue);
 
 /**
  * @brief Insert a new node with the specified integer element at the queue.
