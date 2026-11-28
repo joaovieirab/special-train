@@ -61,4 +61,14 @@ int top(Istack * stack);
  */
 
 void pop(Istack ** stack);
+
+/**
+ * @brief Counts the number of nodes of stack.
+ * 
+ * @param stack pointer for a stack implemented using a linked list of integer elements.
+ * 
+ * @return the number of nodes.
+ */
+
+int len(Istack * stack);
 #endif
