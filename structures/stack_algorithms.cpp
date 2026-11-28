@@ -71,15 +71,3 @@ int len(Istack * stack)
         length++;
     return length;
 }
-
-int main()
-{
-    Istack * stack1;
-    stack1 = empty_stack_gen();
-    push(&stack1, 1);
-    push(&stack1, 2);
-    push(&stack1, 147);
-    pop(&stack1);
-    print_stack(stack1);
-    return 0;
-}
