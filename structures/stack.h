@@ -31,7 +31,7 @@ Istack * empty_stack_gen(void);
  * @param stack double pointer for a stack using a linked list of integer elements.
  * @param new_elem integer value for a new node element.
  * 
- * @note If the queue is empty, it prints a warning message. 
+ * @note If the stack is empty, it prints a warning message. 
  */
 
 void push(Istack ** stack, int new_elem);
@@ -39,7 +39,7 @@ void push(Istack ** stack, int new_elem);
 /**
  * @brief Print the stack elements, in order. 
  * 
- * @note If the queue is empty, it prints a warning message. 
+ * @note If the stack is empty, it prints a warning message. 
  */
 
 void print_stack(Istack * stack);
@@ -51,4 +51,14 @@ void print_stack(Istack * stack);
  */
 
 int top(Istack * stack);
+
+/**
+ * @brief Remove the top node of the stack.
+ * 
+ * @param stack double pointer for a stack using a linked list of integer elements.
+ * 
+ * @note If the stack is empty, it prints a warning message.
+ */
+
+void pop(Istack ** stack);
 #endif
